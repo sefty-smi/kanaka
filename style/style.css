@@ -1,0 +1,156 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+/* header */
+.site-header {
+    position: relative;
+    background-color: #def7ff;
+
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header__wrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.site-header__start {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.brand img {
+    height: 4rem;
+    padding-top: 0.5rem;
+}
+
+.site-header__middle {
+    margin-left: auto;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style-type: none;
+}
+
+.nav__item {
+    a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: black;
+    }
+}
+
+.site-header__end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+}
+
+.button {
+    color: #fff;
+    background-color: #2fa0f6;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* footer */
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #439bc1;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+}
+
+.logo {
+    background-color: #439bc1;
+    display: flex;
+}
+
+.smi-logo {
+    width: 150px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.smi-decs {
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.footer-item-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-icon img {
+    width: 25px;
+    margin: 8px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.links p {
+    margin: auto;
+    margin: 8px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright p {
+    margin: 0;
+}

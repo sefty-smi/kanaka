@@ -119,14 +119,14 @@
 }
 
 .desc-img {
-    padding: 0.5rem;
+    padding: 1.5rem;
     img {
         width: 15vw;
     }
 }
 
 .desc-text {
-    padding: 2rem;
+    padding: 1.5rem;
     h2 {
         text-align: center;
     }
@@ -135,6 +135,9 @@
         letter-spacing: 0.1rem;
         line-height: 1.8rem;
         font-size: 1.2rem;
+    }
+    a {
+        text-decoration: none;
     }
 }
 

@@ -62,7 +62,7 @@
 .problem-text {
     border-top: 2px solid #439bc1;
     p{
-        text-align: justify;
+        word-wrap: break-word;
         letter-spacing: 0.1rem;
         line-height: 1.5rem;
     }

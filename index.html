@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/modal.css" />
   </head>
   <body>
     <!-- header -->
@@ -206,10 +207,105 @@
       </div>
       <div class="app-img">
         <h2>KANAKA mendukung berbagai layanan konsultasi perempuan dan anak</h2>
-        <img
-          src="./image/kanaka-menu.webp"
-          alt="KANAKA mendukung berbagai layanan konsultasi anak"
-        />
+      </div>
+      <div class="main-menu">
+        <div class="main-menu-row flex">
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-konsultasi-anak.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Konsultasi Anak</h4></div>
+            <button class="modal-button" id="menu-btn">Lihat detail</button>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-catatan-kemajuan.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Catatan Kemajuan</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-pertemuan.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Pertemuan</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-tindakan.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Informasi Tindakan</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+        </div>
+        <div class="main-menu-row flex">
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-tempat-perlindungan-sementara.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Shelter</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-orang-tua-asuh.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Orang Tua Asuh</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-konsultasi-melaui-telepon.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Konsultasi Telepon</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img
+                src="./image/menu-statistik.webp"
+                alt="menu konsultasi anak"
+              />
+            </div>
+            <div class="menu-name"><h4>Statistik</h4></div>
+            <button class="modal-button">Lihat detail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal kanaka main menu -->
+    <div id="menu-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          eligendi nulla cum commodi repellat nisi hic libero quod. Quibusdam
+          rerum nemo minima dolorem eligendi ut modi. Soluta dignissimos quos
+          eum.
+        </p>
       </div>
     </div>
 
@@ -416,5 +512,33 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("menu-modal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("menu-btn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

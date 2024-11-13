@@ -133,8 +133,9 @@
     }
     button {
         width: max-content;
-        padding: 0 0.3rem 0 0.3rem;
+        padding: 0.3rem;
         margin-bottom: 1.5rem;
+        border: none;
     }
 }
 
@@ -169,9 +170,27 @@
         line-height: 1.8rem;
         font-size: 1.2rem;
     }
-    a {
-        text-decoration: none;
-    }
+}
+
+.desc-text a {
+    color: #2fa0f6;
+}
+
+.desc-text a:before {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+}
+  
+.desc-text a:hover:before {
+    border-bottom: solid thin #5CAAEF;
+}
+  
+.desc-text a:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 /* points */
